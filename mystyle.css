@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-/* Create two equal columns that floats next to each other */
+/* Create header columns that float next to each other */
 .header.col.left {
   float: left;
   width: 25%;
@@ -24,6 +24,33 @@
 
 /* Clear floats after the columns */
 .header.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create home columns that float next to each other */
+.home.row {
+  padding: 10px;
+  text-align: center;
+}
+
+.home.col.left {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  text-align: left;
+}
+
+.home.col.right {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.home.row:after {
   content: "";
   display: table;
   clear: both;
