@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nikos' page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+
+<!-- header -->
+
+<div class="header row">
+  <div class="header col left">
+    <img src="pics/nikos.jpg" alt="Nikos" style="width:160px;height:200px;"/>
+  </div>
+  <div class="header col right">
+    <h1>Nikolaos Dikaios, Ph.D (Cantab)</h1>
+    <p>
+Physicist, Computer Scientist interested in
+ <i>tomography,
+mathematical optimization, inverse problems, cancer
+informatics and medical physics.</i>
+    </p>
+    <a href="https://orcid.org/0000-0001-9865-0260">open researcher id</a>
+  </div>
+</div>
+
+
+<!-- tabs -->
+
+<button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Research', this, 'green')">Research</button>
+<button class="tablink" onclick="openPage('Funding', this, 'green')">Funding</button>
+<button class="tablink" onclick="openPage('Teaching', this, 'green')">Teaching</button>
+<button class="tablink" onclick="openPage('Publications', this, 'green')">Publications</button>
+<button class="tablink" onclick="openPage('Contact', this, 'green')">Contact</button>
+
+
+<!-- home tab -->
+
+<div id="Home" class="tabcontent">
+  <h3>About me</h3>
+  <p>
+I am a Research Scientist at the Mathematics Research Center, Academy of Athens and an editor at the
+journal of artificial intelligence in cancer. I completed my DPhil (2012) in medical physics from the
+University of Cambridge and worked in Magnetic Resonance Imaging (MRI) as a research associate at
+UCL until 2016. Prior to my appointment at the Academy of Athens in 2020 I was an Assistant Professor
+(tenure), at the department of Electrical Engineering, University of Surrey where I am currently a Visiting
+Assistant Professor. Since 2018, I am a Fellow of the Higher Educational Academy from the UK
+Professional Standards Framework for teaching and learning support in higher education (Recognition
+reference: PR158316). My research interests include tomography, mathematical optimization, cancer
+informatics and physics, where to date (05/2021) I have published 37 peer-reviewed papers in top
+quartile journals (12 as first author, 2 as single author and 3 as last author) and &gt;30 refereed
+proceedings at major international conferences.
+  </p>
+  <p>
+In 2019 I have been awarded a Royal Society Fellowship to work with Elekta on the world&#39;s first linear
+accelerator integrated with high field Magnetic Resonance Imaging (MRI). The aim was to perform real-
+time visualization for truly adaptive radiotherapy, with a potential to monitor tumour response, so that
+treatment can be adjusted accordingly. I have also been awarded (2017) with the Engineering and
+Physical Sciences Research Council (EPSRC) first grant for the most promising UK researchers to work on
+imaging methods to optimize cancer treatment with high energy proton beams. My work in prostate
+cancer detection using multi-parametric MRI has been awarded twice with the Summa Cum Laude (top
+5%) and once with Magna Cum Laude (top 15%) from the flagship conference in MRI (ISMRM) with more
+than 6000 attendees every year. I am also one of the developers of the popular, open-source software
+for tomographic image reconstruction, STIR. STIR has been awarded the Rotblat Medal for the most
+cited research paper published by Physics in Medicine &amp; Biology out of more than 3,000 articles since
+2012.
+  </p>
+</div>
+
+<!-- research tab -->
+
+<div id="Research" class="tabcontent">
+  <h3>Current projects</h3>
+  <ol>
+  <li>
+Research new multiparametric magnetic resonance fingerprinting pulse sequences aiming to robustly quantify tissue properties.
+<img src="pics/magnetic_reasonance.png" alt="Magnetic reasonance" class="image center"/>
+  </li>
+  <li>
+Research new activation functions for deep networks to improve training dynamics and performance.
+<img src="pics/activation_functions.png" alt="Activation functions" class="image center"/>
+  </li>
+  <li>
+Machine learning challenges in high energy physics, aiming to improve the potential of collider searches to discover new exotic particles.
+<img src="pics/ML.png" alt="ML" class="image center"/>
+  </li>
+  <li>
+Cancer mutation network aiming to link types of tumors with driver mutations. The project will be using data from the cancer genome atlas.
+<img src="pics/cancer_mutations.png" alt="ML" class="image center"/>
+  </li>
+  <li>
+Radio-genomics to monitor the response of novel cancer therapies.
+<img src="pics/cancers.png" alt="ML" class="image center"/>
+  </li>
+  </ol>
+  <h3>Main scientific contributions</h3>
+  <ol>
+  <li>
+An analytical Compton scatter simulation algorithm of photons in tissue, which is included in STIR (doi: 10.1109/NSSMIC.2006.354339).
+The developed algorithm can simulate the detection of multiple scattered photons and is significantly faster than the equivalent Monte Carlo simulations.
+  </li>
+  <li>
+Mathematically derived a 4D expectation maximization algorithm suitable for motion compensated image reconstruction in positron emission tomography (doi: 10.1118/1.3611041).
+  </li>
+  <li>
+Dynamic 2D and 3D magnetic resonance imaging (MRI) acquisition protocols suitable for MRI based motion correction in positron emission tomography –proposed a binning algorithm of dynamic 2D MRI into dynamic 3D MRI (doi: 10.1007/s00330-011-2274-4).
+  </li>
+  <li>
+A noise estimation algorithm from averaged diffusion weighted magnetic resonance images, which included a new closed form approximation to Rician sum distributions to model the expected noise distribution (doi: 10.1002/mrm.24877). 
+  </li>
+  <li>
+Showcased that the magnetic resonance imaging phenotype between the peripheral and the transition zone in the prostate is different and zone-specific diagnostic models are needed (doi(s): 10.1007/s00330-015-3636-0, 10.1007/s00330-018-5799-y).
+  </li>
+  <li>
+Machine learning models and radiomics aiming to improve the detection and characterization of prostate cancer and help radiologists classify areas that were scored as indeterminate for cancer. (doi(s):10.1007/s00330-014-3386-4, 10.1007/s00330-016-4579-9, 10.1007/s00330-019-06244-2).
+  </li>
+  <li>
+Proposed a direct estimation of parameters related to magnetic resonance properties and tissue vasculature from k-space measurements in dynamic contrast enhanced MRI (doi(s): 10.1016/j.media.2014.05.0, 10.1016/j.media.20).
+  </li>
+  <li>
+Proton path tracking using physics models and machine learning algorithms (doi(s): 10.1088/1361-6560/ab9413, 10.1088/1361-6560/abf1fd) as part of my EPSRC grant.
+  </li>
+  <li>
+Deep learning to model the complex nonlinear relationship between diseases and their MR spectroscopic metabolic fingerprint (pattern) (doi: 10.1002/nbm.4479).
+  </li>
+  </ol>
+
+  <h3>Honors and awards</h3>
+  <ul>
+  <li>
+2019	Royal Society Fellow (INF/R1/19103) to work on MRI guided Radiotherapy: A new paradigm shift in cancer treatment. 
+  </li>
+  <li>
+2019	Session Chair, Synergistic image reconstruction symposium, Chester, UK
+  </li>
+  <li>
+2017	EPSRC: First Research Grant (EP/R009988/1) to work on Novel image reconstruction techniques with application to proton radiotherapy for optimisation of cancer treatment.
+  </li>
+  <li>
+2017    Summa Cum Laude award (top 5% of the selected papers) Deep learning to improve prostate cancer diagnosis, ISMRM conference, Honolulu, HI, USA.
+  </li>
+  <li>
+2017	Rotblat Medal for most cited research paper (STIR: software for tomographic image reconstruction release 2) published by Physics in Medicine & Biology out of more than 3,000 articles since 2012.
+  </li>
+  <li>
+2015	Magna Cum Laude (top 10% of the selected papers) Support Vector Neural Networks MR based diagnostic model for classification of Transition Zone prostate cancer, ISMRM conference, Toronto, Ontario, Canada
+  </li>
+  <li>
+2013 	Summa Cum Laude award (top 5% of the selected papers)	DCE MRI logistic regression models for prostate cancer detection: does cancer location matter? ISMRM conference, Salt Lake City, Utah, USA
+  </li>
+  </ul>
+</div>
+
+<!-- funding tab -->
+
+<div id="Funding" class="tabcontent">
+  <!--<h3>Funding</h3-->
+  <img src="pics/funding.png" alt="funding" class="image center"/>
+  <ul>
+  <li>
+2020	Academy of Athens 10000E, “Development of analytical transformations for MRI reconstruction”. Co- Investigator: Dr Nikolaos Dikaios.
+  </li>
+  <li>
+2019	HEIF Industrial Strategy Internal Funding 2019/20 19654£, “Characterisation of performance of novel optical micro imaging and proof-of-concept for detection of vascular ageing, vascular disease, and response to vascular intervention”. Principal Investigator: Prof Christian Heiss, Co-Investigator: Dr Nikolaos Dikaios, University of Surrey.
+  </li>
+  <li>
+2019	Royal Society Fellowship (INF/R1/19103) 110267£, “MRI guided Radiotherapy: A new paradigm shift in cancer treatment”. Principal Investigator: Dr Nikolaos Dikaios, University of Surrey.
+  </li>
+  <li>
+2017	EPSRC:Research Grant (EP/R009988/1) 120000£, “Novel image reconstruction techniques with application to proton radiotherapy for optimisation of cancer treatment”. Principal Investigator: Dr Nikolaos Dikaios.
+  </li>
+  <li>
+2017	dbGaP, TCGA - The Cancer Genome Atlas (#19199), “Deep learning cancer type classification based on genetic aberrations”. Principal Investigator: Dr Nikolaos Dikaios, University of Surrey.
+  </li>
+  <li>
+2017	EPSRC: PhD studentship (1947707) 39000£, Co-Investigator: Dr Nikolaos Dikaios, University of Surrey.
+  </li>
+  <li>
+2017	PhD Studentship between the University of Surrey, the National Physical Laboratory and Elekta Limited on Radiotherapy. The external industrial contribution from Electa limited will be 35000£ over the span of 3.5 of years.
+  </li>
+  </ul>
+</div>
+
+<!-- teaching tab -->
+
+<div id="Teaching" class="tabcontent">
+  <!--<h3>Teaching</h3-->
+  <img src="pics/teaching.png" alt="teaching" class="image center"/>
+
+<h3>Courses</h3>
+<ul>
+<li>
+2019 – 2020	Lectured Magnetic Resonance Imaging as part of the Non-ionising Radiation Imaging module, postgraduate course in medical physics, University of Surrey, UK. 
+</li>
+<li>
+2016 – 2020 	Lectured (Module leader) Python programming as part of the Computer and Digital Logic, dpt of electrical and electronic engineering, University of Surrey, UK.
+</li>
+<li>
+2016 – 2020 	Supervised Electronics labs, dpt of electrical and electronic engineering, University of Surrey, UK. 
+</li>
+<li>
+2016 – 2018 	Lectured Mathematics, dpt of electrical and electronic engineering, University of Surrey, UK.
+</li>
+<li>
+2015 	Tutored MR pulse programming, 2nd International Training School on PET-MRI, 2015, Faculty of Medicine and Health, University of Leeds, UK.
+</li>
+<li>
+2014 	Tutored MR pulse programming/reconstruction, 1st International Training School on PET-MRI Engineering, 2014, National Center for Scientific Research Demokritos, Athens, Greece.
+</li>
+</ul>
+
+<h3>Supervision of PhD students and postdoctoral fellows</h3>
+<ul>
+<li>
+2020 – 2023 	Miss Eva Tzabazidou (co-supervisor), Department of Physics National and Kapodistrian University of Athens, Greece.
+</li>
+<li>
+2018 – 2019 	Dr Dimitios Lazos (line manager), Department of Electrical Engineering, University of Surrey.
+</li>
+<li>
+2017 – 2021	Miss Margarita Panagiotidou (main supervisor), Department of Electrical Engineering, University of Surrey.
+</li>
+<li>
+2017 – 2021 	Mr Christopher David Green and Mr Aaron Axford (co-supervisor), Department of Electrical Engineering, University of Surrey.
+</li>
+<li>
+2018 – 2019 	Anne-Laure Taffin, Ecole Polytechnique (main supervisor), University of Grenoble, France.
+</li>
+<li>
+2016 – 2020 	Supervised the thesis of 2 undergraduate and 4 master students.
+</li>
+</ul>
+
+<h3>PhD examinations</h3>
+<ul>
+<li>
+2020	External PhD examination Dr Palak Wadha, University of Leeds, UK. 
+</li>
+<li>
+2019	Internal PhD examination Dr Vassiliki Kanellopoulos, University of Surrey, UK.
+</li>
+<li>
+2017	Internal PhD examination Dr Rhodri Smith, University of Surrey, UK.
+</li>
+</ul>
+</div>
+
+<!-- publications tab -->
+
+<div id="Publications" class="tabcontent">
+  <!--<h3>Publications</h3-->
+  <img src="pics/pubs.png" alt="teaching" class="image center"/>
+  <h3>Peer reviewed papers</h3>
+
+  <h4>Single author</h4>
+  <ul>
+  <li>
+N Dikaios. Deep learning Magnetic Resonance Spectroscopy fingerprints of brain tumours using quantum mechanically synthesised data. NMR in Biomedicine. 2021; 34: 4479.
+  </li>
+  <li>
+N Dikaios. Stochastic Gradient Langevin dynamics for joint parameterization of tracer kinetic models, input functions, and T1 relaxation-times from undersampled k-space DCE-MRI. Med Image Anal. 2020; 62:101690. 
+  </li>
+  </ul>
+
+  <h4>First author</h4>
+  <ul>
+  <li>
+N Dikaios, NE Protonotarios, AS Fokas, GA Kastis. Quantification of T1, T2 relaxation times from magnetic resonance fingerprinting radially undersampled data using analytical transformations. Magn Reson Imaging, 2021; 80: 81:89.
+  </li>
+  <li>
+N Dikaios, F Giganti, HS Sidhu, …, S Punwani. Multi-parametric MRI zone-specific diagnostic model performance compared with experienced radiologists for detection of prostate cancer Eur. Radiol. 2019; 29(8), 4150-4159
+  </li>
+  <li>
+N Dikaios, D Atkinson, C Tudisca, P Purpura, M Forster, H Ahmed, T Beale, M Emberton, S Punwani. A comparison of Bayesian and non-linear regression methods for robust estimation of pharmacokinetics in DCE-MRI and how it affects cancer diagnosis. Comput Med Imaging Graph. 2017; 56:1-10. 
+  </li>
+  <li>
+N Dikaios, J Alkalbani, M Abd-Alazeez,…, S Punwani: Zone-specific logistic regression models improve classification of prostate cancer on multi-parametric MRI. Eur. Radiol. 2015; 25(9):2727-37. 
+  </li>
+  <li>
+N Dikaios, J Alkalbani, HS Sidhu,…, S Punwani: Logistic regression model for diagnosis of transition zone prostate cancer on multi-parametric MRI. Eur Radiol. 2015; 25(2):523-32. 
+  </li>
+  <li>
+N Dikaios, Simon Arridge, V Hamy, S Punwani, D Atkinson: Direct parametric reconstruction from undersampled (k, t)-space data in dynamic contrast enhanced MRI. Med Image Anal. 2014; 18(7): 989-1001. 
+  </li>
+  <li>
+N Dikaios, S Punwani, V Hamy,…, D Atkinson: Noise estimation from averaged diffusion weighted images: Can unbiased quantitative decay parameters assist cancer evaluation? Magn Reson Med. 2013; 71(6):2105-17. 
+  </li>
+  <li>
+N Dikaios, TD Fryer: Registration-weighted motion correction for PET. Med Phys. 2012; 39(3):1253-64. 
+  </li>
+  <li>
+N Dikaios, TD Fryer: Improved motion-compensated image reconstruction for PET using sensitivity correction per respiratory gate and an approximate tube-of-response backprojector. Med Phys. 2011; 38(9):4958-70. 
+  </li>
+  <li>
+N Dikaios, TD Fryer: Acceleration of motion-compensated PET reconstruction: ordered subsets-gates EM algorithms and a priori reference gate information. Phys Med Biol. 2011; 56(6):1695-715.
+  </li>
+  <li>
+N Dikaios, D Izquierdo-Garcia, MJ Graves, V Mani, ZA Fayad, TD Fryer: MRI-based motion correction of thoracic PET: initial comparison of acquisition protocols and correction strategies suitable for simultaneous PET/MRI systems. Eur Radiol. 2011; 22(2):439-46. 
+  </li>
+  <li>
+N Dikaios, K Dinelle, T Spinks, K Nikita, K Thielemans: Processing of transmission data from an uncollimated single photon source. Nuclear Instruments and Methods in Physics Research Section A 2006; 569(2):416-420. 
+  </li>
+  </ul>
+
+  <h4>Last author</h4>
+  <ul>
+  <li>
+D Lazos, CA Collins-Fekete, M Bober, PM Evans, N Dikaios. Machine Learning for proton path tracking in proton Computed Tomography.  Phys Med Biol. 2021 (in press).
+  </li>
+  <li>
+D Lazos, CA Collins-Fekete, PM Evans, N Dikaios. Molière maximum likelihood proton path estimation approximated by cubic Bézier curve for scatter corrected proton CT reconstruction.  Phys Med Biol. 2020; 65(17):175003.
+  </li>
+  <li>
+HA Aldaqadossi, H Khairy, Y Kotb, HA Hussein, H Shaker, N Dikaios. Prediction of pediatric PCNL outcomes using contemporary scoring systems. J Urol. 2017; 198(5):1146-1152. 
+  </li>
+  </ul>
+
+  <h4>Co-author</h4>
+  <ul>
+  <li>
+CA Fekete, N Dikaios, G Royle, E Bar, P Evans. Statistical limitations in ion imaging Phys Med Biol. 2021; 65(8):085011.
+Fokas AS, Dikaios N, Kastis GA. Covid-19: Predictive Mathematical Formulas for the Number of Deaths During Lockdown and Possible Scenarios for the Post-Lockdown Period. Royal Society Proceedings A. 2021 (in press).
+  </li>
+  <li>
+Axford A, Dikaios N, Roberts DA, Clark CH, Evans PM. An end-to-end assessment on the accuracy of adaptive radiotherapy in an MR-linac. Phys Med Biol. 2021 (in press).
+  </li>
+  <li>
+Fokas AS, Dikaios N, Kastis GA. Mathematical models and deep learning for predicting the number of individuals reported to be infected with SARS-CoV-2 Journal of the Royal Society Interface. 2020: 17 (169), 0494.
+  </li>
+  <li>
+CA Fekete, N Dikaios, G Royle, P Evans. Statistical limitations in proton imaging Phys Med Biol. 2020;  65(8):085011 (doi: 10.1088/1361-6560/ab7972 ).
+  </li>
+  <li>
+M Antonelli, EW Johnston, N Dikaios, ..., S Punwani. Machine learning classifiers can predict Gleason pattern 4 prostate cancer with greater accuracy than experienced radiologists Eur. Radiol. 2019; 29(8), 4150-4159.
+  </li>
+  <li>
+Brizmohun AM, Sidhu HS, Dikaios N, Johnston EW, Simmons LA, Freeman A, Kirkham AP, Ahmed HU, Punwani S. Characterizing indeterminate (Likert-score 3/5) peripheral zone prostate lesions with PSA density, PI-RADS scoring and qualitative descriptors on multiparametric MRI. Br J Radiol. 2018; 91 (1083): 20170645. 
+  </li>
+  <li>
+Latifoltojar A, Hall-Craggs M, Rabin N, Popat R, Bainbridge A, Dikaios N, … , Yong K. Magnetic Resonance Imaging in newly diagnosed multiple myeloma: Early changes in lesional signal fat fraction predict disease response. British Journal of Haematology 2017; 176(2):222-233. 
+  </li>
+  <li>
+Latifoltojar A, Hall-Craggs M, Bainbridge A, Yong K, Dikaios N, … , Punwani S. Whole-body MRI quantitative biomarkers predict response in patients with newly diagnosed symptomatic multiple myeloma following Bortezomib induction. Eur. Radiol. 2017; 27(12): 5325-5336
+Sidhu HS, Benigno S, Ganeshan B, Dikaios N, … , Punwani S. Textural analysis of multiparametric MRI detects transition zone prostate cancer. Eur. Radiol. 2017; 27(6): 2348-2358. 
+  </li>
+  <li>
+Bhatnagar G, Dikaios N, Prezzi D,…, Taylor SA. Changes in Dynamic Contrast Enhanced pharmacokinetic and Diffusion Weighted Imaging parameters reflect response to anti-TNF therapy in Crohn's Disease. Br J Radiol 2015; 88(1055): 2015-47. 
+  </li>
+  <li>
+Latifoltojar A, Dikaios N, Ridout A,…, Punwani S. Evolution of multi-parametric MRI quantitative parameters following transrectal ultrasound-guided biopsy of the prostate. Prostate Cancer Prostatic Dis. 2015; 18(4): 343-51.
+  </li>
+  <li>
+M Abd-Alazeez, N Ramachandran, N Dikaios,…, S Punwani: Multiparametric MRI for detection of radiorecurrent prostate cancer: added value of apparent diffusion coefficient maps and dynamic contrast-enhanced images. Prostate Cancer Prostatic Dis. 2015; 18(2):128-36. 
+  </li>
+  <li>
+Abd-Alazeez M, Ahmed HU, Arya M, Allen C, Dikaios N, Freeman A, Emberton M, Kirkham A. Can multiparametric magnetic resonance imaging predict upgrading of transrectal ultrasound biopsy results at more definitive histology? Urol Oncol. 2014; 32(6): 741-7. 
+  </li>
+  <li>
+E Panagiotaki, RW Chan, N Dikaios, HU Ahmed, J O'Callaghan, A Freeman, D Atkinson, S Punwani, DJ Hawkes, DC Alexander: Microstructural Characterization of Normal and Malignant Human Prostate Tissue With Vascular, Extracellular, and Restricted Diffusion for Cytometry in Tumours Magnetic Resonance Imaging. Invest Radiol. 2015; 50(4): 218-27. 
+  </li>
+  <li>
+B Trémoulhéac, N Dikaios, D Atkinson, S Arridge: Dynamic MR image reconstruction-separation from under-sampled (k-t)-space via low-rank plus sparse prior IEEE Trans Med Imaging. 2014; 33(8):1689-701. 
+  </li>
+  <li>
+V Hamy, N Dikaios, S Punwani,…, D Atkinson: Respiratory motion correction in dynamic MRI using robust data decomposition registration - Application to DCE-MRI. Med Image Anal. 2013; 18(2):301-313. 
+  </li>
+  <li>
+JC Makanyanga, D Pendsé, N Dikaios,… , SA Taylor: Evaluation of Crohn's disease activity: Initial validation of a magnetic resonance enterography global score (MEGS) against faecal calprotectin. Eur Radiol. 2013; 24(2):277-87. 
+  </li>
+  <li>
+K Thielemans, C Tsoumpas, S Mustafovic, T Beisel, P Aguiar, N Dikaios, MW Jacobson: STIR: software for tomographic image reconstruction release 2. Phys Med Biol. 2012; 57(4):867-83. 
+  </li>
+  <li>
+N Karakatsanis, N Sakellios, NX Tsantilas, N Dikaios,… , K Nikita: Comparative evaluation of two commercial PET scanners, ECAT EXACT HR+ and Biograph 2, using GATE. Nuclear Instruments and Methods in Physics Research Section A 2006; 569:368-372. 
+  </li>
+  </ul>
+</div>
+
+<!-- contact tab -->
+
+<div id="Contact" class="tabcontent">
+  <!--h3>Contact</h3-->
+  <img src="pics/contact.png" alt="teaching" class="image center"/>
+ 
+<p>
+I am physically located at the Mathematics Research Center 4, Soranou Efesiou str., 11527 Athens. Tel. +30 210 6597 662. e-mail: ndikaios@academyofathens.gr 
+<img src="pics/academy_of_sciences.png" alt="teaching" class="image center"/>
+</p>
+
+<p>
+I am always looking for talented and motivated master students and PhD candidates. If you are interested in my research, drop me an email. If funding is not available, I am keen to work with good candidates to obtain scholarships either internally or from external funders.
+</p>
+
+<h3>Other webpages</h3>
+
+<ul>
+<li>
+<a href="https://scholar.google.co.uk/citations?user=gHEsz9cAAAAJ&hl=en">google scholar</a>
+</li>
+<li>
+<a href="https://www.scopus.com/authid/detail.uri?authorId=15076612600&origin=AuthorEval">scopus</a>
+</li>
+<li>
+<a href="https://www.researchgate.net/profile/Nikolaos-Dikaios">research gate</a>  
+</li>
+<li>
+<a href="https://publons.com/researcher/1205794/nikolaos-dikaios/">publons</a>
+</li>
+<li>
+<a href="https://twitter.com/nd301?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/nikolaos-dikaios-27abb2a8/?originalSubdomain=gr">linkedin</a>
+</li>
+</ul>
+</p>
+
+</div>
+
+
+<!-- scripts -->
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  
+</body>
+</html> 
