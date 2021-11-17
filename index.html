@@ -28,9 +28,7 @@ informatics and physics.</i>
 
 
 <!-- tabs -->
-.tablink{
- display:inline-flex;
-}
+
 <button class="tablink" onclick="openPage('Home', this, 'blue')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('Research', this, 'blue')">Research</button>
 <button class="tablink" onclick="openPage('People', this, 'blue')">People</button>
@@ -523,6 +521,13 @@ function openPage(pageName,elmnt,color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+  
+ <style>
+#outer {
+    display: flex;
+    width: 250px;
+}
+</style>
   
 </body>
 </html> 
